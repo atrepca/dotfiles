@@ -1,0 +1,21 @@
+[user]
+    name = Alex Trepca
+    email = my@email.address
+[alias]
+    ch = checkout
+    co = commit
+    st = status
+    b = branch
+    p = pull
+    d = diff
+    l = log
+    sh = show
+    bl = blame
+[core]
+    pager = less -iR
+[color]
+    ui = true
+[push]
+    default = simple
+[pull]
+    rebase = true
