@@ -24,7 +24,8 @@ source /usr/local/git/contrib/completion/git-prompt.sh
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$(__git_ps1)$ '
 # Aliases
 #
-alias ll='ls -alFhG'
+alias ls='ls -FG'
+alias ll='ls -alh'
 alias flushcache='dscacheutil -flushcache'
 
 # DEBIAN ##########
