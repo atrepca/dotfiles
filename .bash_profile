@@ -9,9 +9,7 @@ alias digall='dig +nocmd any +multiline +noall +answer'
 #alias rm='mv -t ~/.Trash'
 
 # Password generator
-function mkpw() { head /dev/urandom | uuencode -m - | sed -n 2p | cut -c1-${1:-12}; }
-function mkpw_md5() { head /dev/urandom | md5sum | cut -c1-${1:-12}; }
-function mkpw_sha1() { head /dev/urandom | sha1sum | cut -c1-${1:-12}; }
+#mkpw() { head /dev/urandom | uuencode -m - | sed -n 2p | cut -c1-${1:-12}; }
 
 export EDITOR=vi
 
@@ -27,6 +25,12 @@ PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$(__git_ps1)$
 alias ls='ls -FG'
 alias ll='ls -alh'
 alias flushcache='dscacheutil -flushcache'
+
+# Password generator; requires: `brew install pwgen`
+# At least one of: capital letter, number, special character
+makepass() { pwgen -1cny 12 && pbcopy && pbpaste; }
+# No ambiguous characters
+humanpass() { pwgen -1B 12 && pbcopy && pbpaste; }
 
 # DEBIAN ##########
 #
