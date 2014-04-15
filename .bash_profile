@@ -28,9 +28,9 @@ alias flushcache='dscacheutil -flushcache'
 
 # Password generator; requires: `brew install pwgen`
 # At least one of: capital letter, number, special character
-makepass() { pwgen -1cny 12 && pbcopy && pbpaste; }
+makepass() { pwgen -1cny 12 | pbcopy | pbpaste; }
 # No ambiguous characters
-humanpass() { pwgen -1B 12 && pbcopy && pbpaste; }
+humanpass() { pwgen -1Bn 12 | pbcopy | pbpaste; }
 
 # DEBIAN ##########
 #
