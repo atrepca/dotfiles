@@ -27,7 +27,7 @@ export EDITOR=vi
 
 # Load the bash git prompt support and set the prompt
 source /usr/local/git/contrib/completion/git-prompt.sh
-PS1='\e[1;31m-> \e[1;34m\w\e[0m$(__git_ps1) $ '
+PS1='\[\e[1;31m\]-> \[\e[1;34m\]\w\[\e[0m\]$(__git_ps1) $ '
 
 # Aliases
 alias ls='ls -FG'
