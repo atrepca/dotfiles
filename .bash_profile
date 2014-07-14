@@ -25,8 +25,15 @@ export EDITOR=vi
 # MAC #############
 # ###
 
-# Load the bash git prompt support and set the prompt
+# Load the bash git prompt support
 source /usr/local/git/contrib/completion/git-prompt.sh
+# Show unstaged (*) and staged (+) changes
+export GIT_PS1_SHOWDIRTYSTATE=1
+# Display '$' if something is stashed
+export GIT_PS1_SHOWSTASHSTATE=1
+# Display '%' if there are untracked files
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+# Set custom prompt w/ git
 PS1='\[\e[1;31m\]-> \[\e[1;34m\]\w\[\e[0m\]$(__git_ps1) $ '
 
 # Aliases
