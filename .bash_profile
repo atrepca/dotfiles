@@ -47,6 +47,8 @@ makepass() { pwgen -1cny 12 | pbcopy | pbpaste; }
 # No ambiguous characters
 humanpass() { pwgen -1Bn 12 | pbcopy | pbpaste; }
 
+psgrep() { ps -ef | grep $1; }
+
 # DEBIAN ##########
 # ######
 
