@@ -16,7 +16,10 @@ source ~/.local-aliases
 # Password generator
 #mkpw() { head /dev/urandom | uuencode -m - | sed -n 2p | cut -c1-${1:-12}; }
 
+# Set global editor
 export EDITOR=vi
+# Soft tabs for less
+export LESS="-x2"
 
 ###################
 # PLATFORM SPECIFIC
