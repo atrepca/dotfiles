@@ -6,3 +6,7 @@ set ruler
 set tabstop=2
 " Show "invisible" characters
 set list listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" Highlight all search matches
+set hlsearch
+" Highlight search while typing
+set incsearch
