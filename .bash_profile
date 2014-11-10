@@ -18,8 +18,6 @@ source ~/.local-aliases
 
 # Set global editor
 export EDITOR=vi
-# Soft tabs for less
-export LESS="-x2"
 
 ###################
 # PLATFORM SPECIFIC
