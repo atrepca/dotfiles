@@ -8,3 +8,5 @@ set list listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set hlsearch
 " Highlight search while typing
 set incsearch
+" Map `w!!` to write the file as root
+cmap w!! w !sudo tee > /dev/null %
