@@ -11,7 +11,6 @@ alias mv='mv -i'
 alias digall='dig +nocmd any +multiline +noall +answer'
 # Load local aliases
 source ~/.local-aliases
-#alias rm='mv -t ~/.Trash'
 
 # Password generator
 #mkpw() { head /dev/urandom | uuencode -m - | sed -n 2p | cut -c1-${1:-12}; }

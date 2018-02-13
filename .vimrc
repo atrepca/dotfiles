@@ -10,3 +10,5 @@ set hlsearch
 set incsearch
 " Map `w!!` to write the file as root
 cmap w!! w !sudo tee > /dev/null %
+" Get rid of E363
+set maxmempattern=5000
