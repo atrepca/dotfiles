@@ -41,7 +41,7 @@ SHELL_SESSION_HISTORY=0
 # Aliases
 alias ls='ls -FG'
 alias ll='ls -alh'
-alias flushcache='dscacheutil -flushcache'
+alias flushcache='sudo killall -HUP mDNSResponder'
 
 # Password generator; requires: `brew install pwgen`
 # At least one of: capital letter, number, special character
