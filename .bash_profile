@@ -3,6 +3,7 @@
 ###################
 
 # History size
+HISTFILESIZE=5000
 HISTSIZE=5000
 
 # Aliases
