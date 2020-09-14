@@ -1,4 +1,4 @@
-My dotfiles
+Alex's dotfiles
 ========
 
-Nothing to see here but dotfilez!
+Dotfiles I use for configuring my MacOS, because they might be the most important files on my machine.
