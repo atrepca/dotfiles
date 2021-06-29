@@ -27,7 +27,7 @@ export EDITOR=vi
 # ###
 
 # Load the bash git prompt support
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
 # Show unstaged (*) and staged (+) changes
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Display '$' if something is stashed
