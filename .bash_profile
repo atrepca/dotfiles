@@ -7,9 +7,10 @@ HISTFILESIZE=10000
 HISTSIZE=10000
 
 # Aliases
+alias digall='dig +nocmd any +multiline +noall +answer'
 alias g='git'
 alias mv='mv -i'
-alias digall='dig +nocmd any +multiline +noall +answer'
+alias rm='rm -i'
 # Load local aliases
 source ~/.local-aliases
 
@@ -18,6 +19,9 @@ source ~/.local-aliases
 
 # Set global editor
 export EDITOR=vi
+
+# Use brew before local
+export PATH=/opt/homebrew/bin/:$PATH
 
 ###################
 # PLATFORM SPECIFIC
