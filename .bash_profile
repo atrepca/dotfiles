@@ -3,8 +3,8 @@
 ###################
 
 # History size
-HISTFILESIZE=5000
-HISTSIZE=5000
+HISTFILESIZE=10000
+HISTSIZE=10000
 
 # Aliases
 alias g='git'
