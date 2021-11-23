@@ -3,8 +3,7 @@
 ###################
 
 # History size
-HISTFILESIZE=10000
-HISTSIZE=10000
+export HISTSIZE=10000
 
 # Aliases
 alias digall='dig +nocmd any +multiline +noall +answer'
@@ -40,8 +39,6 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 # Set custom prompt w/ git
 PS1='\[\e[1;31m\]-> \[\e[1;34m\]\w\[\e[0m\]$(__git_ps1) $ '
-# Disable bash support for Terminal
-SHELL_SESSION_HISTORY=0
 
 # Aliases
 alias ls='ls -FG'
