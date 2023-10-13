@@ -13,14 +13,11 @@ alias rm='rm -i'
 # Load local aliases
 source ~/.local-aliases
 
-# Password generator
-#mkpw() { head /dev/urandom | uuencode -m - | sed -n 2p | cut -c1-${1:-12}; }
-
 # Set global editor
 export EDITOR=vi
 
-# Use brew before local
-export PATH=/opt/homebrew/bin/:$PATH
+# Tell tfenv we're on Apple Silicon
+export TFENV_ARCH=arm64
 
 ###################
 # PLATFORM SPECIFIC
@@ -39,17 +36,15 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 # Set custom prompt w/ git
 PS1='\[\e[1;31m\]-> \[\e[1;34m\]\w\[\e[0m\]$(__git_ps1) $ '
+# Add brew to PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
+# Disable sending brew analytics
+export HOMEBREW_NO_ANALYTICS=1
 
 # Aliases
 alias ls='ls -FG'
 alias ll='ls -alh'
 alias flushcache='sudo killall -HUP mDNSResponder'
-
-# Password generator; requires: `brew install pwgen`
-# At least one of: capital letter, number, special character
-makepass() { pwgen -1cny 12 | pbcopy | pbpaste; }
-# No ambiguous characters
-humanpass() { pwgen -1Bn 12 | pbcopy | pbpaste; }
 
 psgrep() { ps -ef | grep $1; }
 
