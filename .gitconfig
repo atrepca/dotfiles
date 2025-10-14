@@ -18,10 +18,12 @@
     editor = /usr/bin/vim
     autocrlf = input
 [color]
-    ui = true
+    ui = auto
 [push]
     default = simple
 [pull]
     rebase = true
 [init]
     defaultBranch = main
+[advice]
+    skippedCherryPicks = false
