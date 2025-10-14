@@ -1,4 +1,17 @@
-Alex's dotfiles
-========
+# Alex's Dotfiles
 
-Dotfiles I use for configuring my MacOS, because they might be the most important files on my machine.
+These are my personal dotfiles for setting up my local workstation.
+
+## Usage
+
+1. Clone this repo:
+   ```sh
+   git clone https://github.com/atrepca/dotfiles.git
+   ```
+2. Copy or symlink the files you want into your home directory.
+
+## What's Inside
+
+Shell, editor, and tool configuration files.
+
+Feel free to use or adapt anything here!
