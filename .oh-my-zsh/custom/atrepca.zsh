@@ -6,3 +6,7 @@ alias ll='ls -alFh'
 alias ls='ls --color=auto'
 alias mv='mv -i'
 alias rm='rm -i'
+
+# Work
+alias k='kubectl'
+alias t='terraform'
