@@ -2,6 +2,7 @@
 brew "asciinema"
 brew "awscli"
 brew "cairo"
+brew "chezmoi"
 brew "cli53"
 brew "cloc"
 brew "coreutils"
