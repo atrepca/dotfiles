@@ -1,0 +1,14 @@
+README.md
+Brewfile
+
+{{ if ne .chezmoi.os "darwin" -}}
+.config/kitty
+.zprofile
+{{ end -}}
+
+{{- $omz := stat (joinPath .chezmoi.homeDir ".oh-my-zsh") }}
+{{ if and $omz $omz.isDir -}}
+.oh-my-zsh-custom
+{{- else -}}
+.oh-my-zsh
+{{- end }}

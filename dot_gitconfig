@@ -2,8 +2,8 @@
     name = Alex Trepca
     email = my@email.address
 [alias]
-    ch = checkout
-    co = commit
+    co = checkout
+    ci = commit
     st = status
     b = branch
     p = pull
@@ -14,14 +14,12 @@
     bl = blame
 [core]
     pager = less -iR
-    hooksPath = hooks
-    editor = /usr/bin/vim
     autocrlf = input
 [color]
     ui = true
-[push]
-    default = simple
 [pull]
     rebase = true
 [init]
     defaultBranch = main
+[advice]
+    skippedCherryPicks = false
