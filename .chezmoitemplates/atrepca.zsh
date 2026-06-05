@@ -11,6 +11,11 @@ alias ls='ls --color=auto'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# Use kitty SSH kitten for xterm
+{{ if eq .chezmoi.os "darwin" -}}
+alias ssh='kitty +kitten ssh'
+{{- end }}
+
 # Work
 alias k='kubectl'
 alias t='terraform'
